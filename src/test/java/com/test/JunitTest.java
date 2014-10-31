@@ -6,8 +6,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import thinkInjava.c04.Flower;
-
 public class JunitTest {
 	private static Logger logger = LoggerFactory.getLogger(JunitTest.class);
 
@@ -25,13 +23,6 @@ public class JunitTest {
 	public void testSublist() {
 
 		logger.debug("-----test-----");
-	}
-
-	@Test
-	public void testFlower() {
-
-		Flower x = new Flower();
-		x.print();
 	}
 
 	@Test
