@@ -1,6 +1,5 @@
 package com.test;
 
-import com.myutil.Prt;
 
 public class Demo {
 
@@ -10,9 +9,9 @@ public class Demo {
 		// Formatter formatter = new Formatter(sb, Locale.US);
 		// System.out.println(formatter.format("%4$2s %3$2s %2$2s %1$2s", "a", "b", "c", "d"));
 
-		Prt.outln("---main---test===" + Demo.test());
-		Prt.outln("---main---test1===" + Demo.test1());
-		Prt.outln("---main---test2===" + Demo.test2());
+		System.out.println("---main---test===" + Demo.test());
+		System.out.println("---main---test1===" + Demo.test1());
+		System.out.println("---main---test2===" + Demo.test2());
 	}
 
 	public static int test() {
@@ -22,7 +21,7 @@ public class Demo {
 			return value++;
 		} catch (Exception e) {
 		} finally {
-			Prt.outln("---fianlly---test1--:" + value);
+			System.out.println("---fianlly---test1--:" + value);
 			value++;
 		}
 		return value = 111;
@@ -36,7 +35,7 @@ public class Demo {
 			return value++;
 		} catch (Exception e) {
 		} finally {
-			Prt.outln("---fianlly---test1--:" + value);
+			System.out.println("---fianlly---test1--:" + value);
 			value++;
 			return value++;
 		}
@@ -49,7 +48,7 @@ public class Demo {
 			return ++value;
 		} catch (Exception e) {
 		} finally {
-			Prt.outln("---fianlly---test2--:" + value);
+			System.out.println("---fianlly---test2--:" + value);
 			value++;
 			return ++value;
 		}
